@@ -7,7 +7,7 @@ export default Component.extend({
   tagName: 'iframe',
   elementId: 'ember-pdfjs-viewer',
   attributeBindings: ['src'],
-  filePath: '/ember-pdfjs-viewer/pdfjs/web/compressed.tracemonkey-pldi-09.pdf',
+  filePath: '/ember-pdfjs-wrapper/pdfjs/web/compressed.tracemonkey-pldi-09.pdf',
   src: computed('filepath', {
     get(key) {
       return `ember-pdfjs-viewer/pdfjs/web/viewer.html?file=${this.filePath}`;
