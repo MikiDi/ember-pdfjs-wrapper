@@ -10,7 +10,7 @@ export default Component.extend({
   filePath: '/ember-pdfjs-wrapper/pdfjs/web/compressed.tracemonkey-pldi-09.pdf',
   src: computed('filepath', {
     get(key) {
-      return `ember-pdfjs-viewer/pdfjs/web/viewer.html?file=${this.filePath}`;
+      return `ember-pdfjs-wrapper/pdfjs/web/viewer.html?file=${this.filePath}`;
     },
     set(key, value) {
       return value;
