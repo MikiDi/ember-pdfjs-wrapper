@@ -8,7 +8,7 @@ export default Component.extend({
   elementId: 'ember-pdfjs-viewer',
   attributeBindings: ['src'],
   filePath: '/ember-pdfjs-wrapper/pdfjs/web/compressed.tracemonkey-pldi-09.pdf',
-  src: computed('filepath', {
+  src: computed('filePath', {
     get(key) {
       return `/ember-pdfjs-wrapper/pdfjs/web/viewer.html?file=${encodeURIComponent(this.filePath)}`;
     },
