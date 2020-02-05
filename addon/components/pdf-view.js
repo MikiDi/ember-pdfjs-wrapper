@@ -13,7 +13,7 @@ export default Component.extend({
     const uri = '/ember-pdfjs-wrapper/pdfjs/web/viewer.html'
     return this.prefix ? this.prefix + uri : uri;
   }),
-  src: computed('filePath', 'viewerUri' {
+  src: computed('filePath', 'viewerUri' ,{
     get(key) {
       return this.viewerUri + `?file=${encodeURIComponent(this.filePath)}`;
     },
