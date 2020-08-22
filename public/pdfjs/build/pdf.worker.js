@@ -29009,7 +29009,7 @@ function (_Annotation2) {
     if (data.fieldType === 'Sig') {
       data.fieldValue = null;
 
-      _this3.setFlags(_util.AnnotationFlag.HIDDEN);
+      //_this3.setFlags(_util.AnnotationFlag.HIDDEN); // We don't want to hide signatures
     }
 
     return _this3;
